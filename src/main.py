@@ -269,7 +269,7 @@ def main() -> None:
             new_board = minimax(game.get_board(), depth, game.turn == WHITE)[1]
             game.ai_move(new_board)
             if game.track_position():
-                print("Играта завършва наравно поради повторение на позицията!")
+                print("Tie!")
                 run = False
         elif mode == "PLAYER_AI":
             if game.turn == colors["AI"]:
